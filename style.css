@@ -1,5 +1,6 @@
 
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -75,6 +76,8 @@ nav ul li a:hover {
 .about-image img {
     width: 400px;
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 
 }
 .about h2 {
@@ -89,4 +92,25 @@ nav ul li a:hover {
     margin-top: 30px;
     font-size: 30px;
 
+}
+.gallery {
+    justify-content: center;
+
+}
+.gallery h2 {
+    margin-top: 30px;
+    font-size: 30px;
+
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.gallery-container img {
+    width: 360px;
+    height: 360px;
+}
+.gallery-container img:hover {
+    transform: scale(1.1);
 }
