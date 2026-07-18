@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -60,4 +62,31 @@ nav ul li a:hover {
 .hero a:hover {
     background-color: white;
     color: #f4b400;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 40px;
+    background-color: white;
+
+}
+.about-image img {
+    width: 400px;
+    border-radius: 15px;
+
+}
+.about h2 {
+    margin-top: 30px;
+    font-size: 30px;
+
+}
+.about text {
+    max-width: 700px;
+}
+.about h2 {
+    margin-top: 30px;
+    font-size: 30px;
+
 }
