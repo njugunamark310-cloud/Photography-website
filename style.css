@@ -37,6 +37,14 @@ nav ul {
     margin-top:15px;
     flex-wrap: wrap;
 }
+.button {
+    background-color: #f4b400;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
 nav ul li a{
     color: #fff;
     text-decoration: none;
@@ -239,6 +247,7 @@ nav ul li a:hover {
   }
   .contact button:hover {
     background-color: white;
+    color: #f4b400;
   }
 
 
@@ -249,4 +258,12 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+}
+.footer-text {
+    font-size: 1.5rem;
+}
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
