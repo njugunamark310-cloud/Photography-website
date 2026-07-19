@@ -1,6 +1,4 @@
 
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -15,38 +13,54 @@ body {
     color: #333;
     line-height: 1.6;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 header h1 {
     text-align: center;
+    letter-spacing: 1px;
 }
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     margin-top:15px;
+    flex-wrap: wrap;
 }
 nav ul li a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     margin: 0 1rem;
+    transition: color 0.3s ease;
 }
 nav ul li a:hover {
     color: green;
 }
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 100px 20px;
-    background-color: #444;
-    color: #fff;
+    padding: 20px;
+
 }
-.hero h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+.hero h1 {
+    font-size: 60px;
+    color: #f4b400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 .hero p {
     max-width: 700px;
@@ -72,12 +86,15 @@ nav ul li a:hover {
     gap: 40px;
     background-color: white;
 
+
 }
-.about-image img {
+.about-image img{
     width: 400px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,.3);
 
 }
 .about h2 {
@@ -94,22 +111,23 @@ nav ul li a:hover {
 
 }
 .gallery {
-    justify-content: center;
-
+    text-align: center;
+    padding: 60px 10%;
 }
 .gallery h2 {
     margin-top: 30px;
     font-size: 30px;
 
 }
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+
+.gallery-grid{
+    display:grid;
 }
 .gallery-container img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 .gallery-container img:hover {
     transform: scale(1.1);
@@ -126,5 +144,50 @@ nav ul li a:hover {
 .love h2 {
     margin-top: 30px;
     font-size: 30px;
+    
 
+}
+.contact {
+    width: 100%;
+    text-align: center;
+    padding: 80px 10%;
+    background-color: f4f4f4;
+    margin-top: 50px;
+}
+.contact h2 {
+    margin-top: 30px;
+    font-size: 30px;
+
+}
+.contact p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.contact a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+.contact a:hover {
+    color: green;
+}
+contact links a {
+    color: #f4b400;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  contact links a:hover {
+    color: green;
+  }
+  .contact-links {
+    display: flex;
+  }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
