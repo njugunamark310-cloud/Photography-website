@@ -171,18 +171,77 @@ nav ul li a:hover {
 .contact a:hover {
     color: green;
 }
-contact links a {
+.contact-links a {
     color: #f4b400;
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s ease;
-  }
-  contact links a:hover {
+}
+.contact-links a:hover {
     color: green;
-  }
-  .contact-links {
+}
+.contact-links {
     display: flex;
+}
+.contact {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: white;
+}
+.contact h2 {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+.contact p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+.social-links {
+    margin-bottom: 20px;
   }
+  .social-links a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .social-links a:hover {
+    color: #222;
+  }
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  .contact textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  .contact button {
+    background-color: #f4b400;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .contact button:hover {
+    background-color: white;
+  }
+
+
 footer {
     background-color: #333;
     color: #fff;
